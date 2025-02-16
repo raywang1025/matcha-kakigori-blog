@@ -26,6 +26,10 @@
   p {
     @apply text-sm sm:text-base leading-[2] tracking-[0.04em] text-gray-600 mb-6 sm:mb-8;
   }
+  
+  img {
+    @apply w-full h-auto object-cover;
+  }
 }
 
 @layer components {
@@ -55,6 +59,22 @@
   
   .button-link {
     @apply text-sm sm:text-base tracking-[0.06em] text-gray-900 hover:text-gray-600 transition-colors;
+  }
+  
+  .responsive-image {
+    @apply w-full h-auto object-cover transition-all duration-300;
+  }
+  
+  .hero-image {
+    @apply w-full h-[50vh] md:h-[60vh] lg:h-[70vh] object-cover object-center;
+  }
+  
+  .card-image {
+    @apply w-full aspect-[4/3] object-cover object-center;
+  }
+  
+  .feature-image {
+    @apply w-full aspect-square md:aspect-[4/3] lg:aspect-[16/9] object-cover object-center;
   }
 }
 
@@ -89,4 +109,53 @@
   .responsive-grid {
     @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12;
   }
+  
+  .image-hover-zoom {
+    @apply hover:scale-105 transition-transform duration-500;
+  }
+  
+  .image-hover-brightness {
+    @apply hover:brightness-90 transition-all duration-300;
+  }
+  
+  /* 響應式圖片容器 */
+  .image-container {
+    @apply relative overflow-hidden;
+  }
+  
+  .image-container::before {
+    content: "";
+    @apply block pb-[56.25%]; /* 16:9 比例 */
+  }
+  
+  .image-container img {
+    @apply absolute top-0 left-0 w-full h-full object-cover;
+  }
+  
+  /* 圖片載入動畫 */
+  .image-loading {
+    @apply animate-pulse bg-gray-200;
+  }
+  
+  /* 圖片載入完成動畫 */
+  .image-loaded {
+    @apply animate-fade-in;
+  }
+}
+
+/* 響應式背景圖片 */
+.bg-responsive {
+  @apply bg-cover bg-center bg-no-repeat;
+  @apply min-h-[300px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-[600px];
+}
+
+/* 響應式視頻容器 */
+.video-container {
+  @apply relative w-full overflow-hidden;
+  padding-bottom: 56.25%; /* 16:9 比例 */
+}
+
+.video-container iframe,
+.video-container video {
+  @apply absolute top-0 left-0 w-full h-full object-cover;
 } 

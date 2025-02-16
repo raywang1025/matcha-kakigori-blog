@@ -1,6 +1,6 @@
-title: 抹茶刨冰部落格
-description: 專門介紹日本抹茶刨冰的部落格
-baseurl: "/matcha-kakigori-blog"
+title: 人才招募
+description: 加入我們的團隊，一同創造更好的未來
+baseurl: "/recruit"
 url: "https://raywang1025.github.io"
 
 # 主題設定
@@ -9,16 +9,16 @@ theme: minima
 # 導航選單
 header_pages:
   - about.md
+  - positions.md
   - contact.md
 
 # 社交媒體連結
 social_links:
-  github: raywang1025
+  linkedin: company/raywang
 
 # 多語言設定
 languages:
   - zh-TW
-  - ja
   - en
 
 # 構建設定

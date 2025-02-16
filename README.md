@@ -1,85 +1,66 @@
-# 抹茶刨冰部落格 (Matcha Kakigori Blog)
+# 人才招募網站
 
-這是一個專門介紹日本抹茶刨冰的 WordPress 部落格網站。
+這是一個專門用於人才招募的企業網站。
 
 ## 功能特點
 
-- 多語言支援（日文、中文、英文）
-- 店家資訊分類系統
-- 詳細的抹茶刨冰評價
+- 多語言支援（中文、英文）
+- 職缺資訊分類系統
+- 線上應徵功能
 - 響應式設計
-- 整合 Google 翻譯功能
+- 整合 LinkedIn 功能
 
 ## 技術架構
 
-- WordPress CMS
-- 自定義主題
-- 多語言插件
-- SEO 優化
+- Jekyll 靜態網站生成器
+- Tailwind CSS 框架
+- GitHub Pages 部署
 - 響應式設計
+- SEO 優化
 
 ## 安裝說明
 
-1. 下載並安裝 WordPress
-2. 克隆此倉庫到 `wp-content/themes/` 目錄：
+1. 克隆此倉庫：
    ```bash
-   cd wp-content/themes/
-   git clone https://github.com/raywang1025/matcha-kakigori-blog.git
+   git clone https://github.com/raywang1025/recruit.git
    ```
-3. 在 WordPress 後台啟用主題
-4. 安裝並啟用必要插件
-5. 配置主題設置
+2. 安裝依賴：
+   ```bash
+   bundle install
+   npm install
+   ```
+3. 本地運行：
+   ```bash
+   bundle exec jekyll serve
+   ```
 
-## 必要插件
+## 必要套件
 
-- WPML（多語言支援）
-- Yoast SEO（搜索引擎優化）
-- Advanced Custom Fields（自定義欄位）
-- WP Super Cache（快取優化）
+- Jekyll
+- Tailwind CSS
+- Node.js
+- Ruby
 
 ## 開發指南
 
 1. Fork 此倉庫
 2. 創建您的功能分支：`git checkout -b feature/AmazingFeature`
-3. 提交您的更改：`git commit -m '添加一些很棒的功能'`
+3. 提交您的更改：`git commit -m '添加新功能'`
 4. 推送到分支：`git push origin feature/AmazingFeature`
 5. 開啟一個 Pull Request
 
 ## 貢獻指南
 
-歡迎提交 Pull Request 來改進網站功能和內容。請確保您的代碼符合 WordPress 編碼標準。
+歡迎提交 Pull Request 來改進網站功能和內容。請確保您的代碼符合專案的程式碼規範。
 
 ## 部署說明
 
-### 使用 Heroku 免費部署
-1. 註冊 Heroku 帳戶：https://signup.heroku.com/
-2. 安裝 Heroku CLI
-3. 在專案根目錄執行：
+### 使用 GitHub Pages 部署
+1. 推送到 gh-pages 分支：
    ```bash
-   heroku create matcha-kakigori-blog
-   git push heroku main
+   git push origin gh-pages
    ```
-4. 設定環境變數：
-   ```bash
-   heroku config:set WP_ENV=production
-   ```
-5. 設定資料庫：
-   ```bash
-   heroku addons:create jawsdb:kitefin
-   ```
-
-### 使用 000webhost 免費部署
-1. 註冊 000webhost 帳戶：https://www.000webhost.com/
-2. 創建新網站
-3. 使用檔案管理器上傳 WordPress 檔案
-4. 創建資料庫並配置 wp-config.php
-5. 完成安裝步驟
-
-注意事項：
-- 免費方案可能有流量和存儲限制
-- 建議定期備份資料
-- 可能會有短暫的停機維護時間
-- 網址將會是 yoursite.000webhostapp.com 格式
+2. GitHub Actions 會自動構建和部署網站
 
 ## 授權
 
