@@ -4,11 +4,15 @@
 
 @layer base {
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth antialiased;
   }
   
   body {
-    @apply font-sans font-light text-primary leading-relaxed antialiased tracking-wide text-sm sm:text-base;
+    @apply font-sans text-gray-900 leading-relaxed tracking-wide;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-wider;
   }
   
   h1 {
@@ -76,6 +80,46 @@
   .feature-image {
     @apply w-full aspect-square md:aspect-[4/3] lg:aspect-[16/9] object-cover object-center;
   }
+  
+  .ndc-link {
+    @apply relative inline-block;
+  }
+  
+  .ndc-link::after {
+    @apply content-[''] absolute bottom-0 left-0 w-0 h-px bg-current transition-all duration-300;
+  }
+  
+  .ndc-link:hover::after {
+    @apply w-full;
+  }
+  
+  .ndc-image {
+    @apply relative overflow-hidden;
+  }
+  
+  .ndc-image img {
+    @apply transition-transform duration-700;
+  }
+  
+  .ndc-image:hover img {
+    @apply scale-105;
+  }
+  
+  .ndc-button {
+    @apply inline-flex items-center px-8 py-4 border border-current text-sm tracking-widest transition-colors;
+  }
+  
+  .ndc-nav-link {
+    @apply relative py-2;
+  }
+  
+  .ndc-nav-link::before {
+    @apply content-[''] absolute -bottom-1 left-0 w-0 h-px bg-current transition-all duration-300;
+  }
+  
+  .ndc-nav-link:hover::before {
+    @apply w-full;
+  }
 }
 
 @layer utilities {
@@ -140,6 +184,46 @@
   /* 圖片載入完成動畫 */
   .image-loaded {
     @apply animate-fade-in;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 1s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .scroll-indicator {
+    @apply relative;
+  }
+  
+  .scroll-indicator::after {
+    @apply content-[''] absolute left-1/2 bottom-0 w-px h-8 bg-current transform -translate-x-1/2;
+    animation: scrollIndicator 2s ease-in-out infinite;
+  }
+  
+  @keyframes scrollIndicator {
+    0% { transform: translateX(-50%) scaleY(0); transform-origin: top; }
+    50% { transform: translateX(-50%) scaleY(1); transform-origin: top; }
+    50.1% { transform: translateX(-50%) scaleY(1); transform-origin: bottom; }
+    100% { transform: translateX(-50%) scaleY(0); transform-origin: bottom; }
   }
 }
 

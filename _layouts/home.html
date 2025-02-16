@@ -2,139 +2,72 @@
 layout: default
 ---
 
-<!-- 主要內容區塊：一個螢幕高度 -->
-<section class="h-screen flex items-center justify-center relative overflow-hidden">
-  <!-- 背景 -->
-  <div class="absolute inset-0">
-    <div class="w-full h-full bg-gradient-to-br from-green-100 to-green-200"></div>
-  </div>
-  
-  <!-- 內容 -->
-  <div class="relative z-10 text-center w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h1 class="mb-8 md:mb-12 lg:mb-16 text-center">抹茶刨冰專門店</h1>
-    
-    <div class="prose prose-sm md:prose-base lg:prose-lg mx-auto text-balance text-center mb-12">
-      <p>在這裡，您可以品嚐到最道地的日式抹茶刨冰。<br>
-         我們嚴選最高品質的抹茶，為您帶來最純粹的味覺享受。</p>
+<!-- 主要內容區塊：全螢幕高度 -->
+<section class="min-h-screen flex flex-col">
+  <!-- 主視覺區域 -->
+  <div class="relative h-screen">
+    <!-- 背景圖片 -->
+    <div class="absolute inset-0">
+      <div class="w-full h-full bg-[#f3f3f3]"></div>
     </div>
     
-    <!-- 按鈕 -->
-    <div class="flex flex-wrap gap-4 sm:gap-6 justify-center">
-      <a href="{{ site.baseurl }}/menu" 
-         class="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-white/80 backdrop-blur-sm text-gray-800 hover:bg-white transition-colors text-sm sm:text-base">
-        菜單介紹
-      </a>
-      
-      <a href="{{ site.baseurl }}/stores" 
-         class="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors text-sm sm:text-base">
-        店鋪資訊
-      </a>
+    <!-- 主標題 -->
+    <div class="absolute inset-0 flex items-center justify-center">
+      <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl tracking-widest text-gray-900">
+        抹茶刨冰專門店
+      </h1>
+    </div>
+    
+    <!-- 向下捲動提示 -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <span class="block text-sm tracking-widest text-gray-500">SCROLL</span>
     </div>
   </div>
-</section>
 
-{%- if site.posts.size > 0 -%}
-<!-- 職缺列表：NDC 風格設計 -->
-<section class="py-16 md:py-24 lg:py-32">
-  <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="section-title text-center">
-      RECRUIT
-    </h2>
-    
-    <p class="max-w-3xl mx-auto text-center mb-16 md:mb-20 lg:mb-24 px-4 sm:px-0">
-      在這個充滿挑戰與機遇的時代，<br class="hidden sm:block">
-      我們期待與優秀的人才一同開創新局面，<br class="hidden sm:block">
-      實現更大的可能性。
-    </p>
-    
-    <!-- 職缺網格：響應式卡片排版 -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 mb-16 md:mb-20 lg:mb-24">
-      {%- for post in site.posts -%}
-      <article class="group bg-white rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
-        <!-- 職缺卡片：圖片容器 -->
-        <div class="image-container">
-          <div class="absolute inset-0 bg-gradient-to-br 
-            {% assign mod = forloop.index | modulo: 5 %}
-            {% case mod %}
-              {% when 0 %}from-blue-50 to-blue-100
-              {% when 1 %}from-green-50 to-green-100
-              {% when 2 %}from-red-50 to-red-100
-              {% when 3 %}from-yellow-50 to-yellow-100
-              {% when 4 %}from-purple-50 to-purple-100
-            {% endcase %}
-            group-hover:scale-105 transition-transform duration-700"
-          ></div>
-        </div>
-        
-        <!-- 職缺資訊：職位和部門 -->
-        <div class="p-4 sm:p-6 lg:p-8">
-          <h3 class="post-title text-center">
-            <a href="{{ site.baseurl }}{{ post.url }}" 
-               class="hover:text-gray-600 transition-colors">
-              {{ post.title | escape }}
-            </a>
-          </h3>
-
-          <div class="post-meta text-center">
-            <div class="flex flex-wrap gap-2 mb-3 justify-center">
-              <span class="text-xs px-3 py-1 bg-gray-50 rounded-full">
-                {{ post.categories | join: " / " }}
-              </span>
-            </div>
-            
-            <div class="post-excerpt">
-              {{ post.excerpt | strip_html | truncate: 50 }}
-            </div>
+  <!-- 內容區塊 -->
+  <section class="py-24 md:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- 菜單展示 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
+        <div class="aspect-[4/3] bg-gray-100 relative overflow-hidden group">
+          <img src="{{ site.baseurl }}/assets/images/menu1.jpg" 
+               alt="抹茶刨冰特寫" 
+               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute bottom-0 left-0 p-8">
+            <h2 class="text-xl tracking-wider text-gray-900">季節限定</h2>
+            <p class="mt-2 text-sm tracking-wide text-gray-600">宇治抹茶刨冰</p>
           </div>
         </div>
-      </article>
-      {%- endfor -%}
-    </div>
-    
-    <!-- 查看更多按鈕 -->
-    <div class="text-center px-4 sm:px-0">
-      <a href="{{ site.baseurl }}/positions" class="button-link inline-block">
-        <span class="text-sm sm:text-base">職缺一覽</span>
-        <span class="ml-2 sm:ml-4 transform group-hover:translate-x-2 transition-transform">
-          →
-        </span>
-      </a>
-    </div>
-  </div>
-</section>
-{%- endif -%}
-
-<!-- 公司理念區塊 -->
-<section class="py-16 md:py-24 lg:py-32 bg-gray-50">
-  <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-      <!-- 左側內容 -->
-      <div class="aspect-[4/3] md:aspect-auto bg-gradient-to-br from-green-50 to-green-100 p-6 sm:p-8 lg:p-16 flex flex-col justify-center">
-        <h2 class="mb-6 sm:mb-8 lg:mb-12 text-center">與我們一同成長</h2>
-        
-        <p class="mb-8 lg:mb-12 text-balance text-center">
-          我們重視每一位員工的發展，提供完善的培訓計劃和職涯規劃。
-          在這裡，您將有機會參與具有挑戰性的專案，
-          實現自我價值，開創美好未來。
-        </p>
-        
-        <div class="flex flex-wrap gap-4 sm:gap-6 justify-center">
-          <a href="{{ site.baseurl }}/about" 
-             class="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-white/80 backdrop-blur-sm text-gray-800 hover:bg-white transition-colors text-sm sm:text-base">
-            關於我們
-          </a>
-          
-          <a href="{{ site.baseurl }}/contact" 
-             class="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors text-sm sm:text-base">
-            加入我們
-          </a>
+        <div class="aspect-[4/3] bg-gray-100 relative overflow-hidden group">
+          <img src="{{ site.baseurl }}/assets/images/menu2.jpg" 
+               alt="店鋪環境" 
+               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute bottom-0 left-0 p-8">
+            <h2 class="text-xl tracking-wider text-gray-900">經典口味</h2>
+            <p class="mt-2 text-sm tracking-wide text-gray-600">濃厚抹茶刨冰</p>
+          </div>
         </div>
       </div>
-      
-      <!-- 右側背景 -->
-      <div class="image-container hidden md:block">
-        <div class="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-100"></div>
+    </div>
+  </section>
+
+  <!-- 導覽按鈕 -->
+  <section class="py-24 md:py-32 bg-[#f3f3f3]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
+        <a href="{{ site.baseurl }}/menu" class="group">
+          <span class="block text-sm tracking-widest text-gray-400 mb-2">01</span>
+          <h3 class="text-2xl tracking-wider text-gray-900 group-hover:text-gray-600 transition-colors">菜單介紹</h3>
+        </a>
+        <a href="{{ site.baseurl }}/stores" class="group">
+          <span class="block text-sm tracking-widest text-gray-400 mb-2">02</span>
+          <h3 class="text-2xl tracking-wider text-gray-900 group-hover:text-gray-600 transition-colors">店鋪資訊</h3>
+        </a>
+        <a href="{{ site.baseurl }}/about" class="group">
+          <span class="block text-sm tracking-widest text-gray-400 mb-2">03</span>
+          <h3 class="text-2xl tracking-wider text-gray-900 group-hover:text-gray-600 transition-colors">關於我們</h3>
+        </a>
       </div>
     </div>
-  </div>
+  </section>
 </section> 
