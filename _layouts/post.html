@@ -4,25 +4,24 @@ layout: default
 
 <!-- 文章標題區：使用漸層背景 -->
 <article class="relative">
-  <header class="relative h-[80vh] flex items-center justify-center">
+  <header class="relative h-[60vh] flex items-center justify-center">
     <div class="absolute inset-0">
-      <!-- 使用漸層背景代替圖片 -->
       <div class="w-full h-full bg-gradient-to-br 
         {% assign mod = page.date | date: "%s" | modulo: 5 %}
         {% case mod %}
-          {% when 0 %}from-blue-100 to-blue-200
-          {% when 1 %}from-green-100 to-green-200
-          {% when 2 %}from-red-100 to-red-200
-          {% when 3 %}from-yellow-100 to-yellow-200
-          {% when 4 %}from-purple-100 to-purple-200
+          {% when 0 %}from-blue-50 to-blue-100
+          {% when 1 %}from-green-50 to-green-100
+          {% when 2 %}from-red-50 to-red-100
+          {% when 3 %}from-yellow-50 to-yellow-100
+          {% when 4 %}from-purple-50 to-purple-100
         {% endcase %}
       "></div>
     </div>
-    <div class="relative z-10 text-center max-w-4xl mx-auto px-8">
-      <h1 class="text-4xl md:text-6xl font-serif font-light tracking-wide mb-6 text-gray-800">
+    <div class="relative z-10 text-center max-w-3xl mx-auto px-8">
+      <h1 class="text-3xl md:text-4xl font-serif font-light tracking-wide mb-6 text-gray-900">
         {{ page.title | escape }}
       </h1>
-      <div class="flex items-center justify-center space-x-4 text-gray-600">
+      <div class="flex items-center justify-center space-x-4 text-gray-500 text-sm">
         <time datetime="{{ page.date | date_to_xmlschema }}">
           {{ page.date | date: "%Y年%m月%d日" }}
         </time>
@@ -40,18 +39,18 @@ layout: default
   </header>
 
   <!-- 文章內容區 -->
-  <div class="max-w-4xl mx-auto px-8 py-16">
+  <div class="max-w-3xl mx-auto px-8 py-16">
     <div class="prose prose-lg prose-gray mx-auto">
       {{ content }}
     </div>
   </div>
 
   <!-- 文章頁尾：標籤 -->
-  <footer class="max-w-4xl mx-auto px-8 py-16 border-t border-gray-100">
+  <footer class="max-w-3xl mx-auto px-8 py-16 border-t border-gray-100">
     {%- if page.tags -%}
     <div class="flex flex-wrap gap-2">
       {% for tag in page.tags %}
-        <span class="px-3 py-1 bg-gray-50 text-sm text-gray-600">#{{ tag }}</span>
+        <span class="px-3 py-1 bg-gray-50 text-sm text-gray-500">#{{ tag }}</span>
       {% endfor %}
     </div>
     {%- endif -%}
@@ -61,7 +60,7 @@ layout: default
 <style>
 /* 文章內容的圖片處理 */
 .prose img {
-  @apply w-full aspect-video object-cover my-12;
+  @apply w-full aspect-[16/9] object-cover my-16;
   max-width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -69,20 +68,30 @@ layout: default
 
 /* 文章內容的標題處理 */
 .prose h2 {
-  @apply text-3xl font-serif font-light mt-16 mb-8 text-center;
+  @apply text-2xl font-serif font-light mt-16 mb-8 text-gray-900;
 }
 
 .prose h3 {
-  @apply text-2xl font-serif font-light mt-12 mb-6;
+  @apply text-xl font-serif font-light mt-12 mb-6 text-gray-900;
 }
 
 /* 文章內容的段落處理 */
 .prose p {
-  @apply leading-relaxed text-gray-600;
+  @apply leading-relaxed text-gray-600 text-base;
 }
 
 /* 文章內容的引用處理 */
 .prose blockquote {
-  @apply border-l-4 border-gray-200 pl-6 italic text-gray-600;
+  @apply border-l-2 border-gray-200 pl-4 italic text-gray-500 text-sm;
+}
+
+/* 文章內容的列表處理 */
+.prose ul, .prose ol {
+  @apply text-gray-600 text-base;
+}
+
+/* 文章內容的連結處理 */
+.prose a {
+  @apply text-gray-900 border-b border-gray-200 hover:border-gray-900 transition-colors no-underline;
 }
 </style> 

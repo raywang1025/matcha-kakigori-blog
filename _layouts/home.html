@@ -4,7 +4,7 @@ layout: default
 
 <!-- 英雄區塊：使用全屏設計 -->
 <section class="relative h-[100vh] flex items-center justify-center">
-  <div class="absolute inset-0 overflow-hidden bg-gradient-to-br from-green-100 to-green-200">
+  <div class="absolute inset-0 overflow-hidden bg-gradient-to-br from-green-50 to-green-100">
     <!-- 移除原有圖片，改用純色背景 -->
   </div>
   <div class="relative z-10 text-center max-w-4xl mx-auto px-8">
@@ -17,33 +17,33 @@ layout: default
 
 {%- if site.posts.size > 0 -%}
 <!-- 文章列表：使用大圖展示 -->
-<section class="py-24 md:py-32 bg-white">
-  <div class="max-w-[1800px] mx-auto px-8">
-    <h2 class="text-3xl md:text-4xl font-serif text-center mb-16">最新文章</h2>
+<section class="py-24 md:py-32">
+  <div class="max-w-[2000px] mx-auto">
+    <h2 class="text-2xl md:text-3xl font-serif text-center mb-24">最新文章</h2>
     
     <!-- 文章網格：NDC風格的大圖排版 -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0.5">
       {%- for post in site.posts -%}
-      <article class="group relative aspect-[4/3] overflow-hidden">
+      <article class="group relative aspect-[16/9] overflow-hidden">
         <!-- 文章卡片：使用純色背景代替圖片 -->
         <div class="absolute inset-0 bg-gradient-to-br 
           {% assign mod = forloop.index | modulo: 5 %}
           {% case mod %}
-            {% when 0 %}from-blue-100 to-blue-200
-            {% when 1 %}from-green-100 to-green-200
-            {% when 2 %}from-red-100 to-red-200
-            {% when 3 %}from-yellow-100 to-yellow-200
-            {% when 4 %}from-purple-100 to-purple-200
+            {% when 0 %}from-blue-50 to-blue-100
+            {% when 1 %}from-green-50 to-green-100
+            {% when 2 %}from-red-50 to-red-100
+            {% when 3 %}from-yellow-50 to-yellow-100
+            {% when 4 %}from-purple-50 to-purple-100
           {% endcase %}
           transition-transform duration-700 group-hover:scale-105"
         ></div>
         
         <!-- 文章資訊：懸浮時顯示 -->
-        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-8">
-          <h3 class="text-xl font-serif text-white mb-4">
+        <div class="absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-center items-center text-center p-8">
+          <h3 class="text-xl font-serif text-gray-900 mb-4">
             {{ post.title | escape }}
           </h3>
-          <div class="text-sm text-white/80">
+          <div class="text-sm text-gray-500">
             <time datetime="{{ post.date | date_to_xmlschema }}">
               {{ post.date | date: "%Y年%m月%d日" }}
             </time>
@@ -64,16 +64,16 @@ layout: default
 
 <!-- 特色區塊：對比設計 -->
 <section class="py-24 md:py-32 bg-gray-50">
-  <div class="max-w-[1800px] mx-auto px-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-1">
-      <div class="aspect-square bg-gradient-to-br from-green-100 to-green-200 p-16 flex flex-col justify-center">
-        <h2 class="text-3xl md:text-4xl font-serif mb-8">探索抹茶刨冰的世界</h2>
+  <div class="max-w-[2000px] mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-0.5">
+      <div class="aspect-[4/3] bg-gradient-to-br from-green-50 to-green-100 p-16 flex flex-col justify-center">
+        <h2 class="text-2xl md:text-3xl font-serif mb-8">探索抹茶刨冰的世界</h2>
         <p class="text-gray-600 leading-relaxed mb-8">
           從傳統到創新，我們帶您深入了解日本抹茶刨冰的精緻工藝，
           發掘每一家店鋪的獨特風味。
         </p>
         <div class="flex flex-wrap gap-4">
-          <a href="{{ site.baseurl }}/about" class="inline-flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm text-green-800 hover:bg-white transition-colors">
+          <a href="{{ site.baseurl }}/about" class="inline-flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm text-gray-800 hover:bg-white transition-colors">
             了解更多
           </a>
           <a href="{{ site.baseurl }}/contact" class="inline-flex items-center px-6 py-3 border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors">
@@ -81,7 +81,7 @@ layout: default
           </a>
         </div>
       </div>
-      <div class="aspect-square bg-gradient-to-br from-gray-100 to-gray-200">
+      <div class="aspect-[4/3] bg-gradient-to-br from-gray-50 to-gray-100">
         <!-- 移除原有圖片，改用純色背景 -->
       </div>
     </div>
