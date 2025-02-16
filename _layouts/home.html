@@ -8,9 +8,9 @@ layout: default
     <div class="w-full h-full bg-responsive bg-gradient-to-br from-green-50 to-green-100"></div>
   </div>
   <div class="relative z-10 text-center w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-    <h1 class="mb-8 md:mb-12 lg:mb-16">創新思維，共創未來</h1>
+    <h1 class="mb-8 md:mb-12 lg:mb-16 text-center">創新思維，共創未來</h1>
     
-    <div class="prose prose-sm md:prose-base lg:prose-lg mx-auto text-balance">
+    <div class="prose prose-sm md:prose-base lg:prose-lg mx-auto text-balance text-center">
       <p>我們正在尋找充滿熱情、勇於創新的人才加入我們的團隊。<br>
          在這裡，您將有機會參與具有挑戰性的專案，實現職業發展的理想。</p>
     </div>
@@ -21,7 +21,7 @@ layout: default
 <!-- 職缺列表：NDC 風格設計 -->
 <section class="py-16 md:py-24 lg:py-32">
   <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="section-title">
+    <h2 class="section-title text-center">
       RECRUIT
     </h2>
     
@@ -52,15 +52,15 @@ layout: default
         
         <!-- 職缺資訊：職位和部門 -->
         <div class="p-4 sm:p-6 lg:p-8">
-          <h3 class="post-title">
+          <h3 class="post-title text-center">
             <a href="{{ site.baseurl }}{{ post.url }}" 
                class="hover:text-gray-600 transition-colors">
               {{ post.title | escape }}
             </a>
           </h3>
 
-          <div class="post-meta">
-            <div class="flex flex-wrap gap-2 mb-3">
+          <div class="post-meta text-center">
+            <div class="flex flex-wrap gap-2 mb-3 justify-center">
               <span class="text-xs px-3 py-1 bg-gray-50 rounded-full">
                 {{ post.categories | join: " / " }}
               </span>
@@ -76,7 +76,7 @@ layout: default
     </div>
     
     <!-- 查看更多按鈕 -->
-    <div class="text-right px-4 sm:px-0">
+    <div class="text-center px-4 sm:px-0">
       <a href="{{ site.baseurl }}/positions" class="button-link inline-block">
         <span class="text-sm sm:text-base">職缺一覽</span>
         <span class="ml-2 sm:ml-4 transform group-hover:translate-x-2 transition-transform">
@@ -94,15 +94,15 @@ layout: default
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
       <!-- 左側內容 -->
       <div class="aspect-[4/3] md:aspect-auto bg-gradient-to-br from-green-50 to-green-100 p-6 sm:p-8 lg:p-16 flex flex-col justify-center">
-        <h2 class="mb-6 sm:mb-8 lg:mb-12">與我們一同成長</h2>
+        <h2 class="mb-6 sm:mb-8 lg:mb-12 text-center">與我們一同成長</h2>
         
-        <p class="mb-8 lg:mb-12 text-balance">
+        <p class="mb-8 lg:mb-12 text-balance text-center">
           我們重視每一位員工的發展，提供完善的培訓計劃和職涯規劃。
           在這裡，您將有機會參與具有挑戰性的專案，
           實現自我價值，開創美好未來。
         </p>
         
-        <div class="flex flex-wrap gap-4 sm:gap-6">
+        <div class="flex flex-wrap gap-4 sm:gap-6 justify-center">
           <a href="{{ site.baseurl }}/about" 
              class="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-white/80 backdrop-blur-sm text-gray-800 hover:bg-white transition-colors text-sm sm:text-base">
             關於我們
