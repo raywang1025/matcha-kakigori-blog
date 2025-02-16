@@ -8,53 +8,53 @@
   }
   
   body {
-    @apply font-sans font-light text-primary leading-relaxed antialiased tracking-wide;
+    @apply font-sans font-light text-primary leading-relaxed antialiased tracking-wide text-sm sm:text-base;
   }
   
   h1 {
-    @apply font-serif font-light text-[2.5rem] md:text-[3.5rem] leading-[1.4] tracking-[0.1em] text-gray-900;
+    @apply font-serif font-light text-[2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] leading-[1.4] tracking-[0.1em] text-gray-900;
   }
   
   h2 {
-    @apply font-serif font-light text-[2rem] md:text-[2.5rem] leading-[1.6] tracking-[0.08em] text-gray-900;
+    @apply font-serif font-light text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] leading-[1.6] tracking-[0.08em] text-gray-900;
   }
   
   h3 {
-    @apply font-serif font-light text-[1.5rem] leading-[1.8] tracking-[0.06em] text-gray-900;
+    @apply font-serif font-light text-[1.25rem] sm:text-[1.5rem] leading-[1.8] tracking-[0.06em] text-gray-900;
   }
   
   p {
-    @apply text-base leading-[2] tracking-[0.04em] text-gray-600 mb-8;
+    @apply text-sm sm:text-base leading-[2] tracking-[0.04em] text-gray-600 mb-6 sm:mb-8;
   }
 }
 
 @layer components {
   .nav-link {
-    @apply text-base tracking-[0.06em] text-gray-600 hover:text-gray-900 transition-colors duration-300;
+    @apply text-sm sm:text-base tracking-[0.06em] text-gray-600 hover:text-gray-900 transition-colors duration-300;
   }
   
   .section-title {
-    @apply font-serif text-[2.5rem] font-light tracking-[0.1em] text-center mb-24;
+    @apply font-serif text-[2rem] sm:text-[2.5rem] font-light tracking-[0.1em] text-center mb-16 sm:mb-20 lg:mb-24;
   }
   
   .post-card {
-    @apply relative overflow-hidden;
+    @apply relative overflow-hidden transition-all duration-300;
   }
   
   .post-title {
-    @apply text-lg font-light tracking-[0.06em] leading-[1.8] mb-4;
+    @apply text-base sm:text-lg font-light tracking-[0.06em] leading-[1.8] mb-3 sm:mb-4;
   }
   
   .post-meta {
-    @apply text-sm tracking-[0.04em] text-gray-500 leading-[1.8];
+    @apply text-xs sm:text-sm tracking-[0.04em] text-gray-500 leading-[1.8];
   }
   
   .post-excerpt {
-    @apply text-sm tracking-[0.04em] text-gray-400 leading-[1.8] mt-4;
+    @apply text-xs sm:text-sm tracking-[0.04em] text-gray-400 leading-[1.8] mt-3 sm:mt-4;
   }
   
   .button-link {
-    @apply inline-flex items-center text-base tracking-[0.06em] text-gray-900 hover:text-gray-600 transition-colors;
+    @apply text-sm sm:text-base tracking-[0.06em] text-gray-900 hover:text-gray-600 transition-colors;
   }
 }
 
@@ -69,5 +69,24 @@
   
   .line-height-relaxed {
     line-height: 2;
+  }
+  
+  /* 響應式間距 */
+  .section-spacing {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+  
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* 響應式卡片 */
+  .card-hover {
+    @apply hover:shadow-lg sm:hover:shadow-xl transition-shadow duration-300;
+  }
+  
+  /* 響應式網格 */
+  .responsive-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12;
   }
 } 

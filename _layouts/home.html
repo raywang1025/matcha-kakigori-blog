@@ -3,14 +3,14 @@ layout: default
 ---
 
 <!-- 英雄區塊：品牌形象展示 -->
-<section class="relative h-[100vh] flex items-center justify-center mb-32">
+<section class="relative min-h-[100vh] flex items-center justify-center mb-16 md:mb-24 lg:mb-32">
   <div class="absolute inset-0 overflow-hidden bg-gradient-to-br from-green-50 to-green-100">
     <!-- 移除原有圖片，改用純色背景 -->
   </div>
-  <div class="relative z-10 text-center max-w-4xl mx-auto px-8">
-    <h1 class="mb-16">{{ page.title }}</h1>
+  <div class="relative z-10 text-center w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+    <h1 class="mb-8 md:mb-12 lg:mb-16">{{ page.title }}</h1>
     
-    <div class="prose prose-lg mx-auto text-balance">
+    <div class="prose prose-sm md:prose-base lg:prose-lg mx-auto text-balance">
       {{ content }}
     </div>
   </div>
@@ -18,20 +18,20 @@ layout: default
 
 {%- if site.posts.size > 0 -%}
 <!-- 文章列表：NDC 風格設計 -->
-<section class="py-32">
-  <div class="max-w-screen-2xl mx-auto px-8">
+<section class="py-16 md:py-24 lg:py-32">
+  <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="section-title">
       RECRUIT
     </h2>
     
-    <p class="max-w-3xl mx-auto text-center mb-24">
-      日本のビジネス環境においてはまさにこれからが正念場。<br>
-      デザインの可能性を見つめ、より新しい局面に開いていくために、<br>
+    <p class="max-w-3xl mx-auto text-center mb-16 md:mb-20 lg:mb-24 px-4 sm:px-0">
+      日本のビジネス環境においてはまさにこれからが正念場。<br class="hidden sm:block">
+      デザインの可能性を見つめ、より新しい局面に開いていくために、<br class="hidden sm:block">
       私たちの会社はこんな人材を求めています。
     </p>
     
-    <!-- 文章網格：四欄式卡片排版 -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-24">
+    <!-- 文章網格：響應式卡片排版 -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 mb-16 md:mb-20 lg:mb-24">
       {%- for post in site.posts -%}
       <article class="group bg-white rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
         <!-- 文章卡片：圖片容器 -->
@@ -55,7 +55,7 @@ layout: default
         </div>
         
         <!-- 文章資訊：標題和分類 -->
-        <div class="p-8">
+        <div class="p-4 sm:p-6 lg:p-8">
           <h3 class="post-title">
             <a href="{{ site.baseurl }}{{ post.url }}" 
                class="hover:text-gray-600 transition-colors">
@@ -64,7 +64,7 @@ layout: default
           </h3>
 
           <div class="post-meta">
-            <div class="flex items-center space-x-2">
+            <div class="flex flex-wrap gap-2 mb-3">
               <span class="text-xs px-3 py-1 bg-gray-50 rounded-full">
                 {{ post.categories | join: " / " }}
               </span>
@@ -80,10 +80,10 @@ layout: default
     </div>
     
     <!-- 查看更多按鈕 -->
-    <div class="text-right">
-      <a href="{{ site.baseurl }}/archive" class="button-link">
-        <span>RECRUIT INDEX</span>
-        <span class="ml-4 transform group-hover:translate-x-2 transition-transform">
+    <div class="text-right px-4 sm:px-0">
+      <a href="{{ site.baseurl }}/archive" class="button-link inline-block">
+        <span class="text-sm sm:text-base">RECRUIT INDEX</span>
+        <span class="ml-2 sm:ml-4 transform group-hover:translate-x-2 transition-transform">
           →
         </span>
       </a>
@@ -93,32 +93,34 @@ layout: default
 {%- endif -%}
 
 <!-- 特色區塊：品牌理念展示 -->
-<section class="py-32 bg-gray-50">
-  <div class="max-w-screen-2xl mx-auto px-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-      <div class="aspect-[4/3] bg-gradient-to-br from-green-50 to-green-100 p-16 flex flex-col justify-center">
-        <h2 class="mb-12">当社のドアは開いています</h2>
+<section class="py-16 md:py-24 lg:py-32 bg-gray-50">
+  <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+      <!-- 左側內容 -->
+      <div class="aspect-[4/3] md:aspect-auto bg-gradient-to-br from-green-50 to-green-100 p-6 sm:p-8 lg:p-16 flex flex-col justify-center">
+        <h2 class="mb-6 sm:mb-8 lg:mb-12">当社のドアは開いています</h2>
         
-        <p class="mb-12 text-balance">
+        <p class="mb-8 lg:mb-12 text-balance">
           日本のビジネス環境においてはまさにこれからが正念場。
           デザインの可能性を見つめ、より新しい局面に開いていくために、
           私たちの会社はこんな人材を求めています。
         </p>
         
-        <div class="flex flex-wrap gap-6">
+        <div class="flex flex-wrap gap-4 sm:gap-6">
           <a href="{{ site.baseurl }}/about" 
-             class="inline-flex items-center px-8 py-4 bg-white/80 backdrop-blur-sm text-gray-800 hover:bg-white transition-colors">
+             class="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-white/80 backdrop-blur-sm text-gray-800 hover:bg-white transition-colors text-sm sm:text-base">
             了解更多
           </a>
           
           <a href="{{ site.baseurl }}/contact" 
-             class="inline-flex items-center px-8 py-4 border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors">
+             class="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors text-sm sm:text-base">
             聯絡我們
           </a>
         </div>
       </div>
       
-      <div class="aspect-[4/3] bg-gradient-to-br from-gray-50 to-gray-100">
+      <!-- 右側背景 -->
+      <div class="aspect-[4/3] bg-gradient-to-br from-gray-50 to-gray-100 hidden md:block">
       </div>
     </div>
   </div>
