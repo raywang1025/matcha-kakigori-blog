@@ -1,41 +1,48 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%Y年%m月%d日" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.categories -%}
-      <span class="post-categories">
-        • 
-        {% for category in page.categories %}
-          <span class="category">{{ category }}</span>
-          {%- unless forloop.last -%}, {%- endunless -%}
-        {% endfor %}
-      </span>
-      {%- endif -%}
-    </p>
+<article>
+  <header class="relative h-[60vh] mb-16 flex items-center justify-center">
+    <div class="absolute inset-0">
+      <img 
+        class="w-full h-full object-cover"
+        src="{{ page.cover_image | default: '/assets/images/default-cover.jpg' | relative_url }}"
+        alt="{{ page.title | escape }}"
+      >
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+    <div class="relative z-10 text-center text-white">
+      <h1 class="post-title mb-4">{{ page.title | escape }}</h1>
+      <div class="space-x-4">
+        <time datetime="{{ page.date | date_to_xmlschema }}">
+          {{ page.date | date: "%Y年%m月%d日" }}
+        </time>
+        {%- if page.categories -%}
+        <span>•</span>
+        <span>
+          {% for category in page.categories %}
+            {{ category }}
+            {%- unless forloop.last -%}, {%- endunless -%}
+          {% endfor %}
+        </span>
+        {%- endif -%}
+      </div>
+    </div>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
+  <div class="content-section prose prose-lg prose-gray mx-auto animate-fade-in">
     {{ content }}
   </div>
 
-  <footer class="post-footer">
+  <footer class="content-section mt-16">
     {%- if page.tags -%}
-    <div class="post-tags">
+    <div class="flex flex-wrap gap-2">
       {% for tag in page.tags %}
-        <span class="tag">#{{ tag }}</span>
+        <span class="text-sm text-accent">#{{ tag }}</span>
       {% endfor %}
     </div>
     {%- endif -%}
   </footer>
-
 </article>
 
 <style>
