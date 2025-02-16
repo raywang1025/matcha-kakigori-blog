@@ -2,62 +2,56 @@
 layout: default
 ---
 
-<!-- 英雄區塊：強調視覺重點 -->
-<section class="relative h-screen flex items-center justify-center bg-gray-50">
-  <div class="absolute inset-0 overflow-hidden">
-    <img 
-      src="{{ site.baseurl }}{{ page.hero_image | default: '/assets/images/hero.jpg' }}"
-      alt="Hero Image"
-      class="w-full h-full object-cover opacity-20"
-    >
+<!-- 英雄區塊：使用全屏設計 -->
+<section class="relative h-[100vh] flex items-center justify-center">
+  <div class="absolute inset-0 overflow-hidden bg-gradient-to-br from-green-100 to-green-200">
+    <!-- 移除原有圖片，改用純色背景 -->
   </div>
   <div class="relative z-10 text-center max-w-4xl mx-auto px-8">
-    <h1 class="text-5xl md:text-7xl font-serif font-light tracking-wide mb-8">{{ page.title }}</h1>
-    <div class="prose prose-lg mx-auto">
+    <h1 class="text-5xl md:text-7xl font-serif font-light tracking-wide mb-8 text-gray-800">{{ page.title }}</h1>
+    <div class="prose prose-lg mx-auto text-gray-600">
       {{ content }}
     </div>
   </div>
 </section>
 
 {%- if site.posts.size > 0 -%}
-<!-- 文章列表區塊：使用留白和視覺分組 -->
+<!-- 文章列表：使用大圖展示 -->
 <section class="py-24 md:py-32 bg-white">
-  <div class="max-w-7xl mx-auto px-8">
+  <div class="max-w-[1800px] mx-auto px-8">
     <h2 class="text-3xl md:text-4xl font-serif text-center mb-16">最新文章</h2>
     
-    <!-- 文章網格：使用間距創造視覺呼吸感 -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
+    <!-- 文章網格：NDC風格的大圖排版 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
       {%- for post in site.posts -%}
-      <article class="group relative">
-        <!-- 文章卡片：統一的視覺風格 -->
-        <div class="relative aspect-[4/3] overflow-hidden rounded-2xl mb-6">
-          <img 
-            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            src="{{ site.baseurl }}{{ post.cover_image | default: '/assets/images/default-cover.jpg' }}"
-            alt="{{ post.title | escape }}"
-            loading="lazy"
-          >
-          <!-- 漸層遮罩：創造層次感 -->
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        </div>
+      <article class="group relative aspect-[4/3] overflow-hidden">
+        <!-- 文章卡片：使用純色背景代替圖片 -->
+        <div class="absolute inset-0 bg-gradient-to-br 
+          {% assign mod = forloop.index | modulo: 5 %}
+          {% case mod %}
+            {% when 0 %}from-blue-100 to-blue-200
+            {% when 1 %}from-green-100 to-green-200
+            {% when 2 %}from-red-100 to-red-200
+            {% when 3 %}from-yellow-100 to-yellow-200
+            {% when 4 %}from-purple-100 to-purple-200
+          {% endcase %}
+          transition-transform duration-700 group-hover:scale-105"
+        ></div>
         
-        <!-- 文章資訊：清晰的視覺層次 -->
-        <div class="space-y-4">
-          <h3 class="text-xl font-serif group-hover:text-gray-600 transition-colors">
+        <!-- 文章資訊：懸浮時顯示 -->
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-8">
+          <h3 class="text-xl font-serif text-white mb-4">
             {{ post.title | escape }}
           </h3>
-          <div class="flex items-center space-x-4 text-sm text-gray-500">
+          <div class="text-sm text-white/80">
             <time datetime="{{ post.date | date_to_xmlschema }}">
               {{ post.date | date: "%Y年%m月%d日" }}
             </time>
             {%- if post.categories -%}
-            <span>•</span>
+            <span class="mx-2">•</span>
             <span>{{ post.categories | join: ", " }}</span>
             {%- endif -%}
           </div>
-          {%- if post.excerpt -%}
-          <p class="text-gray-600 line-clamp-2">{{ post.excerpt }}</p>
-          {%- endif -%}
         </div>
         
         <a href="{{ site.baseurl }}{{ post.url }}" class="absolute inset-0" aria-label="閱讀更多：{{ post.title | escape }}"></a>
@@ -68,31 +62,27 @@ layout: default
 </section>
 {%- endif -%}
 
-<!-- 特色區塊：使用對比和留白 -->
+<!-- 特色區塊：對比設計 -->
 <section class="py-24 md:py-32 bg-gray-50">
-  <div class="max-w-7xl mx-auto px-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center">
-      <div class="space-y-8">
-        <h2 class="text-3xl md:text-4xl font-serif">探索抹茶刨冰的世界</h2>
-        <p class="text-gray-600 leading-relaxed">
+  <div class="max-w-[1800px] mx-auto px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-1">
+      <div class="aspect-square bg-gradient-to-br from-green-100 to-green-200 p-16 flex flex-col justify-center">
+        <h2 class="text-3xl md:text-4xl font-serif mb-8">探索抹茶刨冰的世界</h2>
+        <p class="text-gray-600 leading-relaxed mb-8">
           從傳統到創新，我們帶您深入了解日本抹茶刨冰的精緻工藝，
           發掘每一家店鋪的獨特風味。
         </p>
         <div class="flex flex-wrap gap-4">
-          <a href="{{ site.baseurl }}/about" class="inline-flex items-center px-6 py-3 bg-green-50 text-green-800 rounded-lg hover:bg-green-100 transition-colors">
+          <a href="{{ site.baseurl }}/about" class="inline-flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm text-green-800 hover:bg-white transition-colors">
             了解更多
           </a>
-          <a href="{{ site.baseurl }}/contact" class="inline-flex items-center px-6 py-3 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+          <a href="{{ site.baseurl }}/contact" class="inline-flex items-center px-6 py-3 border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors">
             聯絡我們
           </a>
         </div>
       </div>
-      <div class="relative aspect-square rounded-2xl overflow-hidden">
-        <img 
-          src="{{ site.baseurl }}/assets/images/feature.jpg"
-          alt="特色圖片"
-          class="w-full h-full object-cover"
-        >
+      <div class="aspect-square bg-gradient-to-br from-gray-100 to-gray-200">
+        <!-- 移除原有圖片，改用純色背景 -->
       </div>
     </div>
   </div>
