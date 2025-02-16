@@ -2,14 +2,25 @@
 wp-admin/
 wp-includes/
 wp-content/uploads/
-wp-content/upgrade/
-wp-content/backup-db/
-wp-content/cache/
-wp-content/backups/
-
-# WordPress 配置文件
 wp-config.php
-wp-config-sample.php
+
+# 依賴文件
+/vendor/
+/node_modules/
+
+# 編譯後的文件
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# 系統文件
+.DS_Store
+Thumbs.db
+
+# 環境配置
+.env
+.env.*
 
 # 日誌文件
 *.log
@@ -24,13 +35,14 @@ access_log
 .DS_Store
 Thumbs.db
 
-# 依賴目錄
-node_modules/
-vendor/
+# 其他配置
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/cache/
+wp-content/backups/
 
-# 環境配置
-.env
-.env.*
+# WordPress 配置文件
+wp-config-sample.php
 
 # 編輯器配置
 .vscode/

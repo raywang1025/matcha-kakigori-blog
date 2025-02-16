@@ -49,6 +49,58 @@
 
 歡迎提交 Pull Request 來改進網站功能和內容。請確保您的代碼符合 WordPress 編碼標準。
 
+## 部署說明
+
+### 使用 Heroku 免費部署
+1. 註冊 Heroku 帳戶：https://signup.heroku.com/
+2. 安裝 Heroku CLI
+3. 在專案根目錄執行：
+   ```bash
+   heroku create matcha-kakigori-blog
+   git push heroku main
+   ```
+4. 設定環境變數：
+   ```bash
+   heroku config:set WP_ENV=production
+   ```
+5. 設定資料庫：
+   ```bash
+   heroku addons:create jawsdb:kitefin
+   ```
+
+### 使用 000webhost 免費部署
+1. 註冊 000webhost 帳戶：https://www.000webhost.com/
+2. 創建新網站
+3. 使用檔案管理器上傳 WordPress 檔案
+4. 創建資料庫並配置 wp-config.php
+5. 完成安裝步驟
+
+注意事項：
+- 免費方案可能有流量和存儲限制
+- 建議定期備份資料
+- 可能會有短暫的停機維護時間
+- 網址將會是 yoursite.000webhostapp.com 格式
+
 ## 授權
 
-MIT License 
+MIT License
+
+Copyright (c) 2024 Ray Wang
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. 

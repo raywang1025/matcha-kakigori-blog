@@ -1,0 +1,37 @@
+title: 抹茶刨冰部落格
+description: 專門介紹日本抹茶刨冰的部落格
+baseurl: "/matcha-kakigori-blog"
+url: "https://raywang1025.github.io"
+
+# 主題設定
+theme: minima
+
+# 導航選單
+header_pages:
+  - about.md
+  - contact.md
+
+# 社交媒體連結
+social_links:
+  github: raywang1025
+
+# 多語言設定
+languages:
+  - zh-TW
+  - ja
+  - en
+
+# 構建設定
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# 排除文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md 
