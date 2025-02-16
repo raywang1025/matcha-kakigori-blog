@@ -1,1 +1,37 @@
- 
+---
+layout: default
+---
+
+<div class="container mx-auto px-4">
+  <section class="py-32">
+    <h1 class="post-title mb-8">{{ page.title }}</h1>
+    <div class="prose prose-lg mx-auto">
+      {{ content }}
+    </div>
+  </section>
+
+  {%- if site.posts.size > 0 -%}
+  <section class="py-16">
+    <h2 class="font-serif text-3xl text-center mb-16">最新文章</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {%- for post in site.posts -%}
+      <article class="post-card">
+        <img 
+          class="post-card-image"
+          src="{{ post.cover_image | default: '/assets/images/default-cover.jpg' | relative_url }}"
+          alt="{{ post.title | escape }}"
+          loading="lazy"
+        >
+        <div class="post-card-content">
+          <h3 class="text-white text-xl font-serif mb-4">{{ post.title | escape }}</h3>
+          <time class="text-white/80 text-sm" datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%Y年%m月%d日" }}
+          </time>
+        </div>
+        <a href="{{ post.url | relative_url }}" class="absolute inset-0" aria-label="閱讀更多：{{ post.title | escape }}"></a>
+      </article>
+      {%- endfor -%}
+    </div>
+  </section>
+  {%- endif -%}
+</div> 
