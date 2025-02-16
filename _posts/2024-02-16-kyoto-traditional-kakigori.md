@@ -31,8 +31,14 @@ tags: [抹茶刨冰, 京都美食, 傳統甜點]
   instagram_handle="nakamura_tokichi"
 %}
 
-![宇治茶園](https://images.unsplash.com/photo-1576675466969-38eeae4b41f6?w=800)
-*翠綠的宇治茶園風光*
+![茶園風光](https://images.unsplash.com/photo-1576675466969-38eeae4b41f6?w=800)
+*翠綠的茶園景色*
+
+![抹茶準備](https://images.unsplash.com/photo-1542736667-069246bdbc6d?w=800)
+*傳統的抹茶準備*
+
+![店內環境](https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800)
+*古樸的店內環境*
 
 ## 2. 祇園辻利 本店
 - **地址**：京都府京都市東山区四条通祇園町北側
@@ -55,6 +61,12 @@ tags: [抹茶刨冰, 京都美食, 傳統甜點]
 ![祇園街景](https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?w=800)
 *古色古香的祇園街道*
 
+![抹茶甜點](https://images.unsplash.com/photo-1546069901-d5bfd2cbfb1f?w=800)
+*精緻的抹茶甜點*
+
+![茶道體驗](https://images.unsplash.com/photo-1542362567-b07e54358753?w=800)
+*傳統的茶道體驗*
+
 ## 3. 一保堂茶舖
 - **地址**：京都府京都市上京区今出川通堀川東入
 - **營業時間**：9:00-17:00（週日公休）
@@ -73,8 +85,14 @@ tags: [抹茶刨冰, 京都美食, 傳統甜點]
   instagram_handle="ippodo_tea"
 %}
 
-![傳統茶道](https://images.unsplash.com/photo-1542362567-b07e54358753?w=800)
-*優雅的茶道文化*
+![茶葉展示](https://images.unsplash.com/photo-1557816274-5d58aee0efaa?w=800)
+*優質茶葉展示*
+
+![茶具組合](https://images.unsplash.com/photo-1545529468-42764ef8c85f?w=800)
+*精美的茶具組合*
+
+![店鋪外觀](https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?w=800)
+*古樸的店鋪外觀*
 
 ## 4. 茶寮 翠泉
 - **地址**：京都府京都市東山区清水2丁目
@@ -95,7 +113,13 @@ tags: [抹茶刨冰, 京都美食, 傳統甜點]
 %}
 
 ![清水寺景色](https://images.unsplash.com/photo-1493997181344-712f2f19d87a?w=800)
-*清水寺的壯麗景色*
+*壯麗的清水寺景色*
+
+![抹茶製作](https://images.unsplash.com/photo-1542736667-069246bdbc6d?w=800)
+*專業的抹茶製作*
+
+![庭園景觀](https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=800)
+*優美的庭園景觀*
 
 ## 5. 菊一文字
 - **地址**：京都府京都市中京区寺町通御池上ル
@@ -117,6 +141,12 @@ tags: [抹茶刨冰, 京都美食, 傳統甜點]
 
 ![和菓子製作](https://images.unsplash.com/photo-1618882337529-ac6b357aa7fb?w=800)
 *精緻的和菓子工藝*
+
+![店內陳設](https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800)
+*典雅的店內陳設*
+
+![甜點展示](https://images.unsplash.com/photo-1546069901-d5bfd2cbfb1f?w=800)
+*精美的甜點展示*
 
 ## 參訪建議
 - 建議提前查詢各店家公休日

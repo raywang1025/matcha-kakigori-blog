@@ -34,6 +34,15 @@ tags: [抹茶刨冰, 東京美食, 甜點]
 ![表參道街景](https://images.unsplash.com/photo-1542931287-023b922fa89b?w=800)
 *表參道優雅的街景*
 
+![抹茶刨冰特寫](https://images.unsplash.com/photo-1545529468-42764ef8c85f?w=800)
+*精緻的抹茶刨冰製作*
+
+![店內環境](https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800)
+*優雅的用餐環境*
+
+![抹茶準備](https://images.unsplash.com/photo-1542736667-069246bdbc6d?w=800)
+*專業的抹茶準備過程*
+
 ## 2. 日本茶專門店 茶茶 中目黑（Chacha）
 - **地址**：東京都目黒区上目黒1-23-12
 <div class="map-responsive">
@@ -44,6 +53,15 @@ tags: [抹茶刨冰, 東京美食, 甜點]
 <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/chacha_nakameguro/" data-instgrm-version="14"></blockquote>
 <script async src="//www.instagram.com/embed.js"></script>
 </div>
+
+![抹茶拿鐵](https://images.unsplash.com/photo-1515823662972-da6a2ab7141d?w=800)
+*香醇的抹茶飲品*
+
+![日式庭園](https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=800)
+*寧靜的日式庭園景觀*
+
+![甜點製作](https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800)
+*精湛的甜點製作工藝*
 
 ## 3. 虎屋菓寮 新宿伊勢丹店
 - **地址**：東京都新宿区新宿3-14-1 伊勢丹新宿店本館B1F
@@ -56,6 +74,15 @@ tags: [抹茶刨冰, 東京美食, 甜點]
 <script async src="//www.instagram.com/embed.js"></script>
 </div>
 
+![和菓子展示](https://images.unsplash.com/photo-1618882337529-ac6b357aa7fb?w=800)
+*精緻的和菓子展示*
+
+![抹茶道具](https://images.unsplash.com/photo-1542362567-b07e54358753?w=800)
+*傳統的抹茶道具*
+
+![店鋪環境](https://images.unsplash.com/photo-1560624052-449f5ddf0c31?w=800)
+*現代化的店鋪空間*
+
 ## 4. 茶庭 然花抄院 銀座本店
 - **地址**：東京都中央区銀座6-8-7 GINZA SIX 13F
 <div class="map-responsive">
@@ -67,6 +94,15 @@ tags: [抹茶刨冰, 東京美食, 甜點]
 <script async src="//www.instagram.com/embed.js"></script>
 </div>
 
+![銀座夜景](https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=800)
+*迷人的銀座夜景*
+
+![抹茶甜點](https://images.unsplash.com/photo-1546069901-d5bfd2cbfb1f?w=800)
+*精緻的抹茶甜點*
+
+![茶道體驗](https://images.unsplash.com/photo-1542362567-b07e54358753?w=800)
+*正統的茶道體驗*
+
 ## 5. 茶寮 FUKUCHA 東京駅店
 - **地址**：東京都千代田区丸の内1-9-1 東京駅一番街B1F
 <div class="map-responsive">
@@ -77,6 +113,15 @@ tags: [抹茶刨冰, 東京美食, 甜點]
 <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/fukucha_official/" data-instgrm-version="14"></blockquote>
 <script async src="//www.instagram.com/embed.js"></script>
 </div>
+
+![東京車站](https://images.unsplash.com/photo-1554797589-7241bb691973?w=800)
+*東京車站地標*
+
+![抹茶製作](https://images.unsplash.com/photo-1542736667-069246bdbc6d?w=800)
+*專業的抹茶製作*
+
+![甜品展示](https://images.unsplash.com/photo-1515823662972-da6a2ab7141d?w=800)
+*精美的甜品展示*
 
 <style>
 .map-responsive {

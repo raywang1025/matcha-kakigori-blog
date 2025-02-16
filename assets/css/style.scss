@@ -1,0 +1,141 @@
+@import "minima";
+
+/* 日系極簡風格 */
+
+/* 字體設定 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500&display=swap');
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+/* 標題設定 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+/* 內容文字 */
+p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #4a4a4a;
+}
+
+/* 連結樣式 */
+a {
+  color: #666666;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+  
+  &:hover {
+    color: #1a1a1a;
+    border-bottom-color: #1a1a1a;
+  }
+}
+
+/* 導航列 */
+.site-header {
+  border-top: none;
+  border-bottom: 1px solid #e6e6e6;
+  min-height: 60px;
+  background-color: #FFFFFF;
+}
+
+.site-title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* 文章列表 */
+.post-list {
+  margin-left: 0;
+  list-style: none;
+  
+  > li {
+    margin-bottom: 3rem;
+  }
+}
+
+.post-meta {
+  font-size: 0.875rem;
+  color: #999999;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* 圖片樣式 */
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+/* 圖片說明文字 */
+img + em {
+  display: block;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #666666;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* 店家資訊樣式 */
+.shop-info {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-left: 3px solid #e6e6e6;
+}
+
+/* 特色列表 */
+.features-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  
+  li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    
+    &:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #999999;
+    }
+  }
+}
+
+/* 頁尾 */
+.site-footer {
+  border-top: 1px solid #e6e6e6;
+  padding: 2rem 0;
+  background-color: #FFFFFF;
+}
+
+/* 響應式設計 */
+@media screen and (max-width: 800px) {
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  h4 { font-size: 1.125rem; }
+  
+  .post-content {
+    padding: 0 1rem;
+  }
+} 
