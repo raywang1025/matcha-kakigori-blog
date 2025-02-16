@@ -4,7 +4,7 @@ baseurl: "/matcha-kakigori-blog"
 url: "https://raywang1025.github.io"
 
 # 主題設定
-remote_theme: jekyll/minima
+theme: minima
 
 # 導航選單
 header_pages:
@@ -23,11 +23,12 @@ languages:
 
 # 構建設定
 markdown: kramdown
+sass:
+  style: compressed
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-remote-theme
 
 # 排除文件
 exclude:

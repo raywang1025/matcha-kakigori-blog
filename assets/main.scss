@@ -24,6 +24,7 @@ body {
 .site-header {
   border: none;
   margin: 40px 0;
+  background: none;
   
   .site-title {
     font-family: 'Noto Serif JP', serif;
@@ -35,6 +36,8 @@ body {
   
   .site-nav {
     float: right;
+    background: none;
+    border: none;
     
     .page-link {
       font-size: 0.9rem;
@@ -54,9 +57,12 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
   margin: 0;
+  list-style: none;
   
   > li {
     margin: 0;
+    border: none;
+    background: none;
     
     h3 {
       font-family: 'Noto Serif JP', serif;
@@ -77,12 +83,14 @@ body {
   .post-header {
     margin: 80px 0;
     text-align: center;
+    border: none;
     
     .post-title {
       font-family: 'Noto Serif JP', serif;
       font-weight: 200;
       font-size: 2rem;
       letter-spacing: 0.05em;
+      border: none;
     }
   }
   
@@ -95,6 +103,7 @@ body {
       font-weight: 300;
       font-size: 1.5rem;
       margin: 60px 0 30px;
+      border: none;
     }
     
     img {
@@ -130,14 +139,17 @@ body {
   border: none;
   margin-top: 100px;
   padding: 40px 0;
+  background: none;
   
   .footer-col-wrapper {
     display: flex;
     justify-content: space-between;
+    margin: 0;
     
     .footer-col {
       margin: 0;
       padding: 0;
+      border: none;
     }
   }
 }
@@ -150,6 +162,13 @@ body {
   
   .site-header {
     margin: 20px 0;
+    
+    .site-nav {
+      margin: 0;
+      padding: 0;
+      background: none;
+      border: none;
+    }
   }
   
   .post-list {
