@@ -6,8 +6,8 @@
     <title>{% if page.title %}{{ page.title | escape }} - {% endif %}{{ site.title | escape }}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
     
     {%- feed_meta -%}
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
@@ -20,14 +20,14 @@
     <header class="fixed top-0 left-0 right-0 z-50">
       <div class="mx-auto px-8 md:px-16 py-8">
         <nav class="flex justify-between items-center bg-white/80 backdrop-blur-md px-8 py-4 rounded-2xl shadow-sm">
-          <a href="{{ "/" | relative_url }}" class="text-2xl font-serif tracking-wide hover:text-gray-600 transition-colors">
+          <a href="{{ site.baseurl }}/" class="text-2xl font-serif tracking-wide hover:text-gray-600 transition-colors">
             {{ site.title | escape }}
           </a>
           <div class="space-x-12">
             {%- for path in site.header_pages -%}
               {%- assign my_page = site.pages | where: "path", path | first -%}
               {%- if my_page.title -%}
-                <a class="nav-link text-lg tracking-wide" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                <a class="nav-link text-lg tracking-wide" href="{{ site.baseurl }}{{ my_page.url }}">{{ my_page.title | escape }}</a>
               {%- endif -%}
             {%- endfor -%}
           </div>
@@ -86,6 +86,6 @@
       </div>
     </footer>
 
-    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
   </body>
 </html> 

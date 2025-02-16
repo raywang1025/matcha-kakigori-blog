@@ -6,7 +6,7 @@ layout: default
 <section class="relative h-screen flex items-center justify-center bg-gray-50">
   <div class="absolute inset-0 overflow-hidden">
     <img 
-      src="{{ page.hero_image | default: '/assets/images/hero.jpg' | relative_url }}"
+      src="{{ site.baseurl }}{{ page.hero_image | default: '/assets/images/hero.jpg' }}"
       alt="Hero Image"
       class="w-full h-full object-cover opacity-20"
     >
@@ -28,12 +28,12 @@ layout: default
     <!-- 文章網格：使用間距創造視覺呼吸感 -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
       {%- for post in site.posts -%}
-      <article class="group">
+      <article class="group relative">
         <!-- 文章卡片：統一的視覺風格 -->
         <div class="relative aspect-[4/3] overflow-hidden rounded-2xl mb-6">
           <img 
             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            src="{{ post.cover_image | default: '/assets/images/default-cover.jpg' | relative_url }}"
+            src="{{ site.baseurl }}{{ post.cover_image | default: '/assets/images/default-cover.jpg' }}"
             alt="{{ post.title | escape }}"
             loading="lazy"
           >
@@ -60,7 +60,7 @@ layout: default
           {%- endif -%}
         </div>
         
-        <a href="{{ post.url | relative_url }}" class="absolute inset-0" aria-label="閱讀更多：{{ post.title | escape }}"></a>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="absolute inset-0" aria-label="閱讀更多：{{ post.title | escape }}"></a>
       </article>
       {%- endfor -%}
     </div>
@@ -79,17 +79,17 @@ layout: default
           發掘每一家店鋪的獨特風味。
         </p>
         <div class="flex flex-wrap gap-4">
-          <a href="/about" class="inline-flex items-center px-6 py-3 bg-green-50 text-green-800 rounded-lg hover:bg-green-100 transition-colors">
+          <a href="{{ site.baseurl }}/about" class="inline-flex items-center px-6 py-3 bg-green-50 text-green-800 rounded-lg hover:bg-green-100 transition-colors">
             了解更多
           </a>
-          <a href="/contact" class="inline-flex items-center px-6 py-3 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+          <a href="{{ site.baseurl }}/contact" class="inline-flex items-center px-6 py-3 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
             聯絡我們
           </a>
         </div>
       </div>
       <div class="relative aspect-square rounded-2xl overflow-hidden">
         <img 
-          src="{{ '/assets/images/feature.jpg' | relative_url }}"
+          src="{{ site.baseurl }}/assets/images/feature.jpg"
           alt="特色圖片"
           class="w-full h-full object-cover"
         >
