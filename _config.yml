@@ -23,8 +23,15 @@ languages:
 
 # 構建設定
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
 sass:
   style: compressed
+  sourcemap: never
+incremental: true
+livereload: true
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -39,4 +46,17 @@ exclude:
   - README.md
   - wp-content
   - wp-admin
-  - wp-includes 
+  - wp-includes
+  - .git
+  - .github
+  - .gitignore
+  - .sass-cache
+  - .jekyll-cache
+  - .DS_Store
+
+# 快取設定
+keep_files:
+  - .git
+  - .svn
+  - assets
+  - images 
