@@ -26,10 +26,11 @@ tags: [抹茶刨冰, 京都美食, 傳統甜點]
 - **體驗活動**：抹茶點茶體驗（¥3,000/人）
 - **建議停留**：1-2小時
 
-{% include map-instagram.html 
-  map_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.0476711213337!2d135.79893611524738!3d34.91747098019807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108f5f5f5f5f5%3A0x5f5f5f5f5f5f5f5f!2sNakamura%20Tokichi%20Honten!5e0!3m2!1sen!2sjp!4v1645017834759"
-  instagram_handle="nakamura_tokichi"
-%}
+<div class="instagram-embed">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CvmKjH2fP8Zq/?utm_source=ig_embed" data-instgrm-version="14">
+</blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+</div>
 
 ![茶園風光](https://images.unsplash.com/photo-1576675466969-38eeae4b41f6?w=800)
 *翠綠的茶園景色*
@@ -53,10 +54,11 @@ tags: [抹茶刨冰, 京都美食, 傳統甜點]
 - **特別服務**：提供英語、中文導覽
 - **周邊景點**：八坂神社、知恩院
 
-{% include map-instagram.html 
-  map_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.0476711213337!2d135.77893611524738!3d35.00347098019807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108a5f5f5f5f5%3A0x5f5f5f5f5f5f5f5f!2sTsujiri%20Gion%20Main%20Store!5e0!3m2!1sen!2sjp!4v1645017834759"
-  instagram_handle="tsujiri_kyoto"
-%}
+<div class="instagram-embed">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CwqP2RtvXmN/?utm_source=ig_embed" data-instgrm-version="14">
+</blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+</div>
 
 ![祇園街景](https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?w=800)
 *古色古香的祇園街道*
@@ -80,10 +82,11 @@ tags: [抹茶刨冰, 京都美食, 傳統甜點]
 - **茶道課程**：每週六開設茶道體驗
 - **伴手禮推薦**：特製茶葉禮盒
 
-{% include map-instagram.html 
-  map_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.8476711213337!2d135.75893611524738!3d35.01747098019807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108b5f5f5f5f5%3A0x5f5f5f5f5f5f5f5f!2sIppodo%20Tea%20Co.!5e0!3m2!1sen!2sjp!4v1645017834759"
-  instagram_handle="ippodo_tea"
-%}
+<div class="instagram-embed">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CxLmN9tvR2Y/?utm_source=ig_embed" data-instgrm-version="14">
+</blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+</div>
 
 ![茶葉展示](https://images.unsplash.com/photo-1557816274-5d58aee0efaa?w=800)
 *優質茶葉展示*
@@ -107,10 +110,11 @@ tags: [抹茶刨冰, 京都美食, 傳統甜點]
 - **預約建議**：建議提前一天預約
 - **拍照建議**：下午2-3點光線最佳
 
-{% include map-instagram.html 
-  map_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.2476711213337!2d135.78893611524738!3d34.99747098019807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108c5f5f5f5f5%3A0x5f5f5f5f5f5f5f5f!2sSaryo%20Suisen!5e0!3m2!1sen!2sjp!4v1645017834759"
-  instagram_handle="saryo_suisen"
-%}
+<div class="instagram-embed">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CvXmL9tvR2Y/?utm_source=ig_embed" data-instgrm-version="14">
+</blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+</div>
 
 ![清水寺景色](https://images.unsplash.com/photo-1493997181344-712f2f19d87a?w=800)
 *壯麗的清水寺景色*
@@ -134,10 +138,11 @@ tags: [抹茶刨冰, 京都美食, 傳統甜點]
 - **團體預約**：10人以上團體需提前預約
 - **季節限定**：每月推出新款和菓子
 
-{% include map-instagram.html 
-  map_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.1476711213337!2d135.76893611524738!3d35.00747098019807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108d5f5f5f5f5%3A0x5f5f5f5f5f5f5f5f!2sKikuichi%20Monji!5e0!3m2!1sen!2sjp!4v1645017834759"
-  instagram_handle="kikuichi_monji"
-%}
+<div class="instagram-embed">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CwKjH2fP8Zq/?utm_source=ig_embed" data-instgrm-version="14">
+</blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+</div>
 
 ![和菓子製作](https://images.unsplash.com/photo-1618882337529-ac6b357aa7fb?w=800)
 *精緻的和菓子工藝*
@@ -185,4 +190,24 @@ tags: [抹茶刨冰, 京都美食, 傳統甜點]
 - 體驗傳統和菓子製作
 
 ![茶道文化](https://images.unsplash.com/photo-1542362567-b07e54358753?w=800)
-*深厚的茶道文化傳統* 
+*深厚的茶道文化傳統*
+
+<style>
+.instagram-embed {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-media {
+  max-width: 540px !important;
+  width: 100% !important;
+  background: #FFF;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  box-shadow: none;
+  margin: 1px;
+  min-width: 326px !important;
+  padding: 0;
+}
+</style> 

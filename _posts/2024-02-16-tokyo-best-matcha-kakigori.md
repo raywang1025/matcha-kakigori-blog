@@ -43,14 +43,44 @@ tags: [抹茶刨冰, 東京美食, 甜點]
 ![抹茶準備](https://images.unsplash.com/photo-1542736667-069246bdbc6d?w=800)
 *專業的抹茶準備過程*
 
+<div class="instagram-embed">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CxKjH2fP8Zq/?utm_source=ig_embed" data-instgrm-version="14">
+<div style="padding:16px;">
+<a href="https://www.instagram.com/p/CxKjH2fP8Zq/?utm_source=ig_embed" style="color:#000;text-decoration:none;">
+<div style="display:flex;flex-direction:row;align-items:center;margin-bottom:14px;">
+<div>
+<div style="background-color:#F4F4F4;border-radius:50%;height:40px;width:40px;">
+</div>
+</div>
+<div style="margin-left:8px;">
+<div style="background-color:#F4F4F4;border-radius:20px;flex-grow:0;height:14px;width:60px;">
+</div>
+<div style="background-color:#F4F4F4;border-radius:20px;flex-grow:0;height:14px;width:100px;margin-top:6px;">
+</div>
+</div>
+</div>
+<div style="padding:19% 0;">
+</div>
+<div style="display:block;height:50px;margin:0 auto 12px;width:50px;">
+</div>
+<div style="margin-left:8px;">
+<div style="background-color:#F4F4F4;border-radius:20px;flex-grow:0;height:20px;width:100%;">
+</div>
+</div>
+</div>
+</blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+</div>
+
 ## 2. 日本茶專門店 茶茶 中目黑（Chacha）
 - **地址**：東京都目黒区上目黒1-23-12
 <div class="map-responsive">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.2789046985813!2d139.69898611524685!3d35.65115098019927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b4046a6fec9%3A0x8c84d85a35752f3a!2sChacha%20Nakameguro!5e0!3m2!1sen!2sjp!4v1645017834759" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
 
-<div class="instagram-responsive">
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/chacha_nakameguro/" data-instgrm-version="14"></blockquote>
+<div class="instagram-embed">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CwXmL9tvR2Y/?utm_source=ig_embed" data-instgrm-version="14">
+</blockquote>
 <script async src="//www.instagram.com/embed.js"></script>
 </div>
 
@@ -69,8 +99,9 @@ tags: [抹茶刨冰, 東京美食, 甜點]
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.827747333886!2d139.70442611524787!3d35.69131098019621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd0d6b1dcef%3A0x85f8bf26b5f2c4eb!2sToraya%20Karyo%20Isetan%20Shinjuku!5e0!3m2!1sen!2sjp!4v1645017834759" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
 
-<div class="instagram-responsive">
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/toraya_japan/" data-instgrm-version="14"></blockquote>
+<div class="instagram-embed">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CvqP2RtvXmN/?utm_source=ig_embed" data-instgrm-version="14">
+</blockquote>
 <script async src="//www.instagram.com/embed.js"></script>
 </div>
 
@@ -89,8 +120,9 @@ tags: [抹茶刨冰, 東京美食, 甜點]
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.3476711213337!2d139.76493611524738!3d35.67147098019807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be5f5f5f5f5%3A0x5f5f5f5f5f5f5f5f!2sZenkasuien%20GINZA%20SIX!5e0!3m2!1sen!2sjp!4v1645017834759" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
 
-<div class="instagram-responsive">
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/zenkasuien_official/" data-instgrm-version="14"></blockquote>
+<div class="instagram-embed">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Cw8mKjPvYqL/?utm_source=ig_embed" data-instgrm-version="14">
+</blockquote>
 <script async src="//www.instagram.com/embed.js"></script>
 </div>
 
@@ -109,8 +141,9 @@ tags: [抹茶刨冰, 東京美食, 甜點]
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.4876711213337!2d139.76793611524738!3d35.68147098019807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bf5f5f5f5f5%3A0x5f5f5f5f5f5f5f5f!2sFUKUCHA%20Tokyo%20Station!5e0!3m2!1sen!2sjp!4v1645017834759" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
 
-<div class="instagram-responsive">
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/fukucha_official/" data-instgrm-version="14"></blockquote>
+<div class="instagram-embed">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CxWmN9tvR2Y/?utm_source=ig_embed" data-instgrm-version="14">
+</blockquote>
 <script async src="//www.instagram.com/embed.js"></script>
 </div>
 
@@ -138,8 +171,22 @@ tags: [抹茶刨冰, 東京美食, 甜點]
     width:100%;
     position:absolute;
 }
-.instagram-responsive {
-    margin-bottom: 20px;
+.instagram-embed {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-media {
+  max-width: 540px !important;
+  width: 100% !important;
+  background: #FFF;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  box-shadow: none;
+  margin: 1px;
+  min-width: 326px !important;
+  padding: 0;
 }
 </style>
 
