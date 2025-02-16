@@ -2,17 +2,33 @@
 layout: default
 ---
 
-<!-- 英雄區塊：品牌形象展示 -->
-<section class="relative min-h-[100vh] flex items-center justify-center mb-16 md:mb-24 lg:mb-32">
-  <div class="absolute inset-0 overflow-hidden">
-    <div class="w-full h-full bg-responsive bg-gradient-to-br from-green-50 to-green-100"></div>
+<!-- 主要內容區塊：一個螢幕高度 -->
+<section class="h-screen flex items-center justify-center relative overflow-hidden">
+  <!-- 背景 -->
+  <div class="absolute inset-0">
+    <div class="w-full h-full bg-gradient-to-br from-green-50 to-green-100"></div>
   </div>
-  <div class="relative z-10 text-center w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+  
+  <!-- 內容 -->
+  <div class="relative z-10 text-center w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <h1 class="mb-8 md:mb-12 lg:mb-16 text-center">創新思維，共創未來</h1>
     
-    <div class="prose prose-sm md:prose-base lg:prose-lg mx-auto text-balance text-center">
+    <div class="prose prose-sm md:prose-base lg:prose-lg mx-auto text-balance text-center mb-12">
       <p>我們正在尋找充滿熱情、勇於創新的人才加入我們的團隊。<br>
          在這裡，您將有機會參與具有挑戰性的專案，實現職業發展的理想。</p>
+    </div>
+    
+    <!-- 按鈕 -->
+    <div class="flex flex-wrap gap-4 sm:gap-6 justify-center">
+      <a href="{{ site.baseurl }}/about" 
+         class="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-white/80 backdrop-blur-sm text-gray-800 hover:bg-white transition-colors text-sm sm:text-base">
+        關於我們
+      </a>
+      
+      <a href="{{ site.baseurl }}/contact" 
+         class="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors text-sm sm:text-base">
+        加入我們
+      </a>
     </div>
   </div>
 </section>
