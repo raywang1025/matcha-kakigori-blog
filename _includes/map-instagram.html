@@ -1,0 +1,32 @@
+{% if include.map_url %}
+<div class="map-responsive">
+<iframe src="{{ include.map_url }}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+{% endif %}
+
+{% if include.instagram_handle %}
+<div class="instagram-responsive">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/{{ include.instagram_handle }}/" data-instgrm-version="14"></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+</div>
+{% endif %}
+
+<style>
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin-bottom: 20px;
+}
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.instagram-responsive {
+    margin-bottom: 20px;
+}
+</style> 
