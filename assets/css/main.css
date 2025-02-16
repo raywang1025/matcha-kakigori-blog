@@ -8,50 +8,66 @@
   }
   
   body {
-    @apply font-sans font-light text-primary leading-relaxed antialiased;
+    @apply font-sans font-light text-primary leading-relaxed antialiased tracking-wide;
   }
   
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif font-light tracking-wider;
+  h1 {
+    @apply font-serif font-light text-[2.5rem] md:text-[3.5rem] leading-[1.4] tracking-[0.1em] text-gray-900;
+  }
+  
+  h2 {
+    @apply font-serif font-light text-[2rem] md:text-[2.5rem] leading-[1.6] tracking-[0.08em] text-gray-900;
+  }
+  
+  h3 {
+    @apply font-serif font-light text-[1.5rem] leading-[1.8] tracking-[0.06em] text-gray-900;
+  }
+  
+  p {
+    @apply text-base leading-[2] tracking-[0.04em] text-gray-600 mb-8;
   }
 }
 
 @layer components {
   .nav-link {
-    @apply text-secondary hover:text-primary transition-colors duration-300;
+    @apply text-base tracking-[0.06em] text-gray-600 hover:text-gray-900 transition-colors duration-300;
+  }
+  
+  .section-title {
+    @apply font-serif text-[2.5rem] font-light tracking-[0.1em] text-center mb-24;
   }
   
   .post-card {
-    @apply relative overflow-hidden aspect-square group;
-  }
-  
-  .post-card-image {
-    @apply w-full h-full object-cover transition-transform duration-500 group-hover:scale-105;
-  }
-  
-  .post-card-content {
-    @apply absolute inset-0 bg-black/50 flex flex-col justify-center items-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+    @apply relative overflow-hidden;
   }
   
   .post-title {
-    @apply font-serif text-4xl md:text-5xl lg:text-6xl font-light tracking-wider text-center;
+    @apply text-lg font-light tracking-[0.06em] leading-[1.8] mb-4;
   }
   
   .post-meta {
-    @apply text-sm text-accent;
+    @apply text-sm tracking-[0.04em] text-gray-500 leading-[1.8];
   }
   
-  .content-section {
-    @apply max-w-prose mx-auto px-4 py-8;
+  .post-excerpt {
+    @apply text-sm tracking-[0.04em] text-gray-400 leading-[1.8] mt-4;
   }
   
-  .image-full {
-    @apply w-screen h-[80vh] object-cover my-20 relative left-1/2 -translate-x-1/2;
+  .button-link {
+    @apply inline-flex items-center text-base tracking-[0.06em] text-gray-900 hover:text-gray-600 transition-colors;
   }
 }
 
 @layer utilities {
-  .blur-backdrop {
-    @apply backdrop-blur-md bg-white/80;
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .letter-spacing-wide {
+    letter-spacing: 0.1em;
+  }
+  
+  .line-height-relaxed {
+    line-height: 2;
   }
 } 

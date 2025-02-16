@@ -8,8 +8,9 @@ layout: default
     <!-- 移除原有圖片，改用純色背景 -->
   </div>
   <div class="relative z-10 text-center max-w-4xl mx-auto px-8">
-    <h1 class="text-5xl md:text-7xl font-serif font-light tracking-wide mb-12 text-gray-800">{{ page.title }}</h1>
-    <div class="prose prose-lg mx-auto text-gray-600">
+    <h1 class="mb-16">{{ page.title }}</h1>
+    
+    <div class="prose prose-lg mx-auto text-balance">
       {{ content }}
     </div>
   </div>
@@ -19,9 +20,15 @@ layout: default
 <!-- 文章列表：NDC 風格設計 -->
 <section class="py-32">
   <div class="max-w-screen-2xl mx-auto px-8">
-    <h2 class="text-4xl font-serif text-center mb-24 tracking-wide">
-      NDC PEOPLE
+    <h2 class="section-title">
+      RECRUIT
     </h2>
+    
+    <p class="max-w-3xl mx-auto text-center mb-24">
+      日本のビジネス環境においてはまさにこれからが正念場。<br>
+      デザインの可能性を見つめ、より新しい局面に開いていくために、<br>
+      私たちの会社はこんな人材を求めています。
+    </p>
     
     <!-- 文章網格：四欄式卡片排版 -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-24">
@@ -48,22 +55,22 @@ layout: default
         </div>
         
         <!-- 文章資訊：標題和分類 -->
-        <div class="p-8 space-y-6 bg-white">
-          <h3 class="text-lg font-light leading-relaxed">
+        <div class="p-8">
+          <h3 class="post-title">
             <a href="{{ site.baseurl }}{{ post.url }}" 
                class="hover:text-gray-600 transition-colors">
               {{ post.title | escape }}
             </a>
           </h3>
 
-          <div class="text-sm text-gray-500 space-y-3">
+          <div class="post-meta">
             <div class="flex items-center space-x-2">
               <span class="text-xs px-3 py-1 bg-gray-50 rounded-full">
                 {{ post.categories | join: " / " }}
               </span>
             </div>
             
-            <div class="text-gray-400 line-clamp-2">
+            <div class="post-excerpt">
               {{ post.excerpt | strip_html | truncate: 50 }}
             </div>
           </div>
@@ -74,12 +81,9 @@ layout: default
     
     <!-- 查看更多按鈕 -->
     <div class="text-right">
-      <a href="{{ site.baseurl }}/archive" 
-         class="inline-flex items-center space-x-4 text-lg group">
-        <span class="text-gray-800 group-hover:text-gray-600 transition-colors">
-          NDC PEOPLE INDEX
-        </span>
-        <span class="transform group-hover:translate-x-2 transition-transform">
+      <a href="{{ site.baseurl }}/archive" class="button-link">
+        <span>RECRUIT INDEX</span>
+        <span class="ml-4 transform group-hover:translate-x-2 transition-transform">
           →
         </span>
       </a>
@@ -93,22 +97,28 @@ layout: default
   <div class="max-w-screen-2xl mx-auto px-8">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
       <div class="aspect-[4/3] bg-gradient-to-br from-green-50 to-green-100 p-16 flex flex-col justify-center">
-        <h2 class="text-2xl md:text-3xl font-serif mb-12">探索抹茶刨冰的世界</h2>
-        <p class="text-gray-600 leading-relaxed mb-12">
-          從傳統到創新，我們帶您深入了解日本抹茶刨冰的精緻工藝，
-          發掘每一家店鋪的獨特風味。
+        <h2 class="mb-12">当社のドアは開いています</h2>
+        
+        <p class="mb-12 text-balance">
+          日本のビジネス環境においてはまさにこれからが正念場。
+          デザインの可能性を見つめ、より新しい局面に開いていくために、
+          私たちの会社はこんな人材を求めています。
         </p>
+        
         <div class="flex flex-wrap gap-6">
-          <a href="{{ site.baseurl }}/about" class="inline-flex items-center px-8 py-4 bg-white/80 backdrop-blur-sm text-gray-800 hover:bg-white transition-colors">
+          <a href="{{ site.baseurl }}/about" 
+             class="inline-flex items-center px-8 py-4 bg-white/80 backdrop-blur-sm text-gray-800 hover:bg-white transition-colors">
             了解更多
           </a>
-          <a href="{{ site.baseurl }}/contact" class="inline-flex items-center px-8 py-4 border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors">
+          
+          <a href="{{ site.baseurl }}/contact" 
+             class="inline-flex items-center px-8 py-4 border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors">
             聯絡我們
           </a>
         </div>
       </div>
+      
       <div class="aspect-[4/3] bg-gradient-to-br from-gray-50 to-gray-100">
-        <!-- 移除原有圖片，改用純色背景 -->
       </div>
     </div>
   </div>
