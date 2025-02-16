@@ -32,6 +32,30 @@ sass:
 incremental: true
 livereload: true
 
+# 性能優化
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [development]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
+
+# 資源優化
+assets:
+  compression: true
+  sources:
+    - assets/js
+    - assets/css
+    - assets/images
+  js_compressor: uglifier
+  css_compressor: sass
+  cachebust: hard
+  cache: true
+  cdn: true
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -59,4 +83,5 @@ keep_files:
   - .git
   - .svn
   - assets
-  - images 
+  - images
+  - sw.js 
