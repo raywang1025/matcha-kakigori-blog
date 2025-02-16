@@ -15,16 +15,19 @@
     {%- endif -%}
   </head>
 
-  <body class="bg-white">
-    <header class="fixed top-0 left-0 right-0 z-50 blur-backdrop">
-      <div class="container mx-auto px-4 py-6">
-        <nav class="flex justify-between items-center">
-          <a href="{{ "/" | relative_url }}" class="text-xl font-serif">{{ site.title | escape }}</a>
-          <div class="space-x-8">
+  <body class="bg-white min-h-screen flex flex-col">
+    <!-- 導航區塊：使用最小化設計，增加留白 -->
+    <header class="fixed top-0 left-0 right-0 z-50">
+      <div class="mx-auto px-8 md:px-16 py-8">
+        <nav class="flex justify-between items-center bg-white/80 backdrop-blur-md px-8 py-4 rounded-2xl shadow-sm">
+          <a href="{{ "/" | relative_url }}" class="text-2xl font-serif tracking-wide hover:text-gray-600 transition-colors">
+            {{ site.title | escape }}
+          </a>
+          <div class="space-x-12">
             {%- for path in site.header_pages -%}
               {%- assign my_page = site.pages | where: "path", path | first -%}
               {%- if my_page.title -%}
-                <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                <a class="nav-link text-lg tracking-wide" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
               {%- endif -%}
             {%- endfor -%}
           </div>
@@ -32,35 +35,53 @@
       </div>
     </header>
 
-    <main class="mt-24">
+    <!-- 主要內容區：增加上下間距，創造呼吸感 -->
+    <main class="flex-grow mt-32 mb-24">
       {{ content }}
     </main>
 
-    <footer class="bg-gray-50 mt-32">
-      <div class="container mx-auto px-4 py-16">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 class="font-serif text-lg mb-4">{{ site.title | escape }}</h3>
-            <p class="text-sm text-gray-600">{{ site.description | escape }}</p>
+    <!-- 頁尾區塊：使用視覺分組和留白 -->
+    <footer class="bg-gray-50 mt-auto">
+      <div class="mx-auto px-8 md:px-16 py-24">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24">
+          <!-- 品牌區塊 -->
+          <div class="space-y-6">
+            <h3 class="font-serif text-xl tracking-wide">{{ site.title | escape }}</h3>
+            <p class="text-gray-600 leading-relaxed">{{ site.description | escape }}</p>
           </div>
-          <div>
-            <h3 class="font-serif text-lg mb-4">聯絡資訊</h3>
+          
+          <!-- 社群連結區塊 -->
+          <div class="space-y-6">
+            <h3 class="font-serif text-xl tracking-wide">聯絡資訊</h3>
             {%- if site.social_links -%}
-            <div class="flex space-x-4">
+            <div class="flex space-x-8">
               {%- for link in site.social_links -%}
-                <a href="https://github.com/{{ link[1] }}" class="text-gray-600 hover:text-gray-900">
+                <a href="https://github.com/{{ link[1] }}" class="text-gray-600 hover:text-gray-900 transition-colors">
                   {{ link[0] }}
                 </a>
               {%- endfor -%}
             </div>
             {%- endif -%}
           </div>
-          <div>
-            <h3 class="font-serif text-lg mb-4">訂閱更新</h3>
-            <p class="text-sm text-gray-600">
+          
+          <!-- 訂閱區塊 -->
+          <div class="space-y-6">
+            <h3 class="font-serif text-xl tracking-wide">訂閱更新</h3>
+            <p class="text-gray-600 leading-relaxed">
               訂閱我們的電子報，獲取最新的抹茶刨冰資訊。
             </p>
+            <form class="mt-4 space-y-4">
+              <input type="email" placeholder="請輸入您的 Email" class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-500">
+              <button type="submit" class="w-full px-4 py-2 bg-green-50 text-green-800 rounded-lg hover:bg-green-100 transition-colors">
+                訂閱電子報
+              </button>
+            </form>
           </div>
+        </div>
+        
+        <!-- 版權資訊：視覺分隔 -->
+        <div class="mt-16 pt-8 border-t border-gray-200 text-center text-gray-500">
+          <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
         </div>
       </div>
     </footer>
